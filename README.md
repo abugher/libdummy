@@ -11,6 +11,6 @@ library with the `LD_PRELOAD` variable.
     LD_PRELOAD=/path/to/libdummy/libdummy.so mpv
 
 Results:  Mixed.  `mpv` is failing for other reasons, now.  This part seems to
-work, though.  The return code of '0' indicates that KMS is unavailable, and
+work, though.  The return code of `0` indicates that KMS is unavailable, and
 that is probably correct information.  I tried setting the return code to `1`,
 but that resulted in a non-operative mpv with no interesting output.
