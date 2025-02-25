@@ -1,5 +1,6 @@
 Problem:  `libdrm`, as implemented in the OS for a Jetson Nano, does not
-implement `drmIsKMS`.  `mpv` fails immediately, citing this undefined symbol.
+implement `drmIsKMS`.  `mpv`, as provided by Ubuntu Noble, fails immediately,
+citing this undefined symbol.
 
 Solution:  This library "implements" `drmIsKMS` as a function that just returns
 zero.  Build it on the host with `make`.  Then instruct `mpv` to use the
